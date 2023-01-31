@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ftpwebapplication:
+    image: ${DOCKER_REGISTRY-}ftpwebapplication
+    build:
+      context: .\FTPWebApplication
+      dockerfile: Dockerfile
